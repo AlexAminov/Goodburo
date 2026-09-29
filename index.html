@@ -20,12 +20,12 @@
     .c1 .hero{display:block;min-height:0;padding:52px 0 70px;overflow:visible}
     .c1 .hero:after{content:none}
     .c1 h1{font-size:clamp(48px,7vw,108px);line-height:.94;letter-spacing:-.065em;max-width:none;margin:58px 0 52px}
-    .c1 .hero-bottom{display:grid;grid-template-columns:1fr 390px;gap:75px;align-items:end}
-    .c1 .proofbar{display:flex;flex-wrap:wrap;gap:38px;border:0}
-    .c1 .proofbar div{border:0;padding:0}.c1 .proofbar strong{font-size:clamp(26px,3vw,40px);font-weight:500;letter-spacing:-.045em}.c1 .proofbar span{display:block;font-size:14px;margin-top:8px;opacity:.8}
-    .c1 .hero-side{padding:0;max-width:none}.c1 .hero-side p{font-size:18px;line-height:1.5;margin:0 0 25px}
+    .c1 .hero-bottom{display:grid;grid-template-columns:390px 1fr;gap:75px;align-items:end}
+    .c1 .hero-action{position:relative;z-index:2}
+    .c1 .proofbar{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:flex-end;gap:30px;border:0}
+    .c1 .proofbar div{border:0;padding:0}.c1 .proofbar strong{font-size:18px;font-weight:700;letter-spacing:-.02em}.c1 .proofbar span{display:block;font-size:12px;line-height:1.35;margin-top:4px;opacity:.8}.c1 .proofbar .proof-extra span{max-width:180px;margin:0}
     .c1 .nav .cta{width:auto;white-space:nowrap}
-    .c1 .works{background:#f7f6f0}
+    .c1 .works{background:#f7f6f0;padding-top:0}
     .portfolio-list{border-top:2px solid #151515}
     .portfolio-row{display:grid;grid-template-columns:45px minmax(0,1fr) 190px 135px;align-items:center;gap:26px;padding:20px 0;border-bottom:2px solid #151515;text-decoration:none;color:#141414}
     .portfolio-row h3{font-size:clamp(30px,5.5vw,76px);letter-spacing:-.055em;line-height:1.07;margin:0;transform-origin:left center;transition:transform .3s ease,color .3s ease}
@@ -39,7 +39,7 @@
     .c1 .cta:hover,.c1 .cta:focus-visible{background:#dfff9d;color:#2439a6;transform:translateY(-2px)}
     .c1 a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
     #concept1 section{scroll-margin-top:80px}
-    @media(max-width:850px){.c1 .hero{min-height:0}.c1 .hero-bottom{grid-template-columns:1fr;gap:38px}.c1 .hero-side{max-width:540px}.portfolio-row{grid-template-columns:30px minmax(0,1fr) 150px;gap:15px}.portfolio-category{grid-column:2;font-size:12px}.portfolio-row img{grid-column:3;grid-row:1/span 2;height:115px}.c1 h1{margin:45px 0}}
+    @media(max-width:850px){.c1 .hero{min-height:0}.c1 .hero-bottom{grid-template-columns:1fr;gap:30px}.c1 .hero-action{max-width:540px}.c1 .proofbar{justify-content:flex-start}.portfolio-row{grid-template-columns:30px minmax(0,1fr) 150px;gap:15px}.portfolio-category{grid-column:2;font-size:12px}.portfolio-row img{grid-column:3;grid-row:1/span 2;height:115px}.c1 h1{margin:45px 0}}
     @media(max-width:520px){.c1 .hero{padding:32px 0 45px}.c1 h1{font-size:46px;line-height:1.02;margin:36px 0}.c1 .proofbar{gap:24px}.c1 .proofbar strong{font-size:27px}.c1 .proofbar span{font-size:12px}.portfolio-row{grid-template-columns:22px minmax(0,1fr) 95px;gap:10px;padding:20px 0}.portfolio-row h3{font-size:29px;overflow-wrap:anywhere}.portfolio-row img{height:92px}.portfolio-number,.portfolio-category{font-size:12px}.c1 .hero-kicker{font-size:12px;letter-spacing:.05em}}
     @media(hover:none){.portfolio-row img{filter:none}}
     @media(prefers-reduced-motion:reduce){.c1 a,.portfolio-row h3,.portfolio-row img{transition:none}.portfolio-row:hover h3,.portfolio-row:focus-visible h3{transform:none}}
@@ -48,12 +48,12 @@
 </style></head><body><main>    <section id="concept1" class="panel active c1">
       <div class="wrap topline"><a class="logo" href="#concept1"><span class="logo-dot"></span>GoodBuro</a><div class="nav"><a href="#c1works">Работы</a><a href="#c1services">Услуги</a><a href="#c1team">Команда</a><a class="cta" href="https://t.me/alekseiaminov" target="_blank" rel="noreferrer">Написать в Telegram</a></div></div>
       <div class="wrap hero">
-        <span class="eyebrow hero-kicker">Good Buro / брендинг-агентство</span>
+        <span class="eyebrow hero-kicker">Брендинг-агентство</span>
         <h1>Делаем бизнес сильным<br>и узнаваемым с помощью<br><em>дизайна и маркетинга.</em></h1>
-        <div class="hero-bottom"><div class="proofbar"><div><strong>100+</strong><span>кейсов</span></div><div><strong>С 2010</strong><span>создаём бренды</span></div></div>
-        <aside class="hero-side"><p>Помогаем бизнесу стать узнаваемым: находим сильную идею, создаём айдентику и доводим её до реального запуска.</p><a class="cta" href="https://t.me/alekseiaminov" target="_blank" rel="noreferrer">Рассказать о задаче</a></aside></div>
+        <div class="hero-bottom"><div class="hero-action"><a class="cta" href="https://t.me/alekseiaminov" target="_blank" rel="noreferrer">Рассказать о задаче</a></div>
+        <div class="proofbar"><div><strong>100+</strong><span>кейсов</span></div><div><strong>С 2010 года</strong><span>создаём бренды</span></div><div class="proof-extra"><span>+ креатив, энергия,<br>энтузиазм, знания</span></div></div></div>
       </div>
-      <section class="works" id="c1works"><div class="wrap"><div class="section-head"><h2>Работы говорят<br>за нас.</h2><span class="eyebrow">Портфолио / 10 проектов</span></div><div class="portfolio-list">
+      <section class="works" id="c1works"><div class="wrap"><div class="portfolio-list">
 <a class="portfolio-row" href="paradnaya.html"><span class="portfolio-number">01</span><h3>Парадная</h3><img src="assets/image-1.png" alt="Айдентика бара Парадная" loading="lazy"><span class="portfolio-category">Ребрендинг ↗</span></a>
 <a class="portfolio-row" href="crusty.html"><span class="portfolio-number">02</span><h3>Crusty</h3><img src="assets/image-2.png" alt="Айдентика бистро Crusty" loading="lazy"><span class="portfolio-category">Айдентика ↗</span></a>
 <a class="portfolio-row" href="match.html"><span class="portfolio-number">03</span><h3>Мэтч</h3><img src="assets/image-3.png" alt="Айдентика бьюти-студии Мэтч" loading="lazy"><span class="portfolio-category">Брендинг ↗</span></a>
