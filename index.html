@@ -23,7 +23,7 @@
     .c1 .hero-bottom{display:grid;grid-template-columns:390px 1fr;gap:75px;align-items:end}
     .c1 .hero-action{position:relative;z-index:2}
     .c1 .proofbar{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:flex-end;gap:30px;border:0}
-    .c1 .proofbar div{border:0;padding:0}.c1 .proofbar strong{font-size:18px;font-weight:700;letter-spacing:-.02em}.c1 .proofbar span{display:block;font-size:12px;line-height:1.35;margin-top:4px;opacity:.8}.c1 .proofbar .proof-extra span{max-width:180px}
+    .c1 .proofbar div{border:0;padding:0}.c1 .proofbar strong{font-size:18px;font-weight:700;letter-spacing:-.02em}.c1 .proofbar span{display:block;font-size:12px;line-height:1.35;margin-top:4px;opacity:.8}.c1 .proofbar .proof-extra span{max-width:180px}.c1 .since-line,.c1 .proof-symbols{display:flex;align-items:baseline;gap:6px}.c1 .since-line .since-prefix{font-size:12px;margin:0;opacity:.8}.c1 .proof-symbols strong{font-size:18px;font-weight:700}
     .c1 .nav .cta{width:auto;white-space:nowrap}
     .c1 .works{background:#f7f6f0;padding-top:68px}
     .portfolio-intro{margin-bottom:34px;color:#555860}
@@ -41,7 +41,7 @@
     .c1 a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
     #concept1 section{scroll-margin-top:80px}
     @media(max-width:850px){.c1 .hero{min-height:0}.c1 .hero-bottom{grid-template-columns:1fr;gap:30px}.c1 .hero-action{max-width:540px}.c1 .proofbar{justify-content:flex-start}.portfolio-row{grid-template-columns:30px minmax(0,1fr) 150px;gap:15px}.portfolio-category{grid-column:2;font-size:12px}.portfolio-row img{grid-column:3;grid-row:1/span 2;height:115px}.c1 h1{margin:45px 0}}
-    @media(max-width:520px){.c1 .hero{padding:32px 0 45px}.c1 h1{font-size:46px;line-height:1.02;margin:36px 0}.c1 .proofbar{gap:24px}.c1 .proofbar strong{font-size:27px}.c1 .proofbar span{font-size:12px}.portfolio-row{grid-template-columns:22px minmax(0,1fr) 95px;gap:10px;padding:20px 0}.portfolio-row h3{font-size:29px;overflow-wrap:anywhere}.portfolio-row img{height:92px}.portfolio-number,.portfolio-category{font-size:12px}.c1 .hero-kicker{font-size:12px;letter-spacing:.05em}}
+    @media(max-width:520px){.c1 .topline .nav{display:none}.c1 .hero{padding:32px 0 45px}.c1 h1{font-size:46px;line-height:1.02;margin:36px 0}.c1 h1 .with-help{display:block}.c1 .proofbar{gap:24px}.c1 .proofbar strong,.c1 .proof-symbols strong{font-size:27px}.c1 .proofbar span{font-size:12px}.portfolio-row{grid-template-columns:22px minmax(0,1fr) 95px;gap:10px;padding:20px 0}.portfolio-row h3{font-size:29px;overflow-wrap:anywhere}.portfolio-row img{height:92px}.portfolio-number,.portfolio-category{font-size:12px}.c1 .hero-kicker{font-size:12px;letter-spacing:.05em}}
     @media(hover:none){.portfolio-row img{filter:none}}
     @media(prefers-reduced-motion:reduce){.c1 a,.portfolio-row h3,.portfolio-row img{transition:none}.portfolio-row:hover h3,.portfolio-row:focus-visible h3{transform:none}}
   
@@ -50,9 +50,9 @@
       <div class="wrap topline"><a class="logo" href="#concept1"><span class="logo-dot"></span>GoodBuro</a><div class="nav"><a href="#c1works">Работы</a><a href="#c1services">Услуги</a><a href="#c1team">Команда</a><a class="cta" href="https://t.me/alekseiaminov" target="_blank" rel="noreferrer">Написать в Telegram</a></div></div>
       <div class="wrap hero">
         <span class="eyebrow hero-kicker">Брендинг-агентство</span>
-        <h1>Делаем бизнес сильным<br>и узнаваемым с помощью<br><em>дизайна и маркетинга.</em></h1>
+        <h1>Делаем бизнес сильным<br>и узнаваемым <span class="with-help">с помощью</span><br><em>дизайна и маркетинга.</em></h1>
         <div class="hero-bottom"><div class="hero-action"><a class="cta" href="https://t.me/alekseiaminov" target="_blank" rel="noreferrer">Рассказать о задаче</a></div>
-        <div class="proofbar"><div><strong>100+</strong><span>кейсов</span></div><div><strong>С 2010 года</strong><span>создаём бренды</span></div><div class="proof-extra"><strong>+</strong><span>креатив и энтузиазм</span></div></div></div>
+        <div class="proofbar"><div><strong>100+</strong><span>кейсов</span></div><div><div class="since-line"><span class="since-prefix">С</span><strong>2010 года</strong></div><span>создаём бренды</span></div><div class="proof-extra"><div class="proof-symbols"><strong>+</strong><strong>∞</strong></div><span>креатив и энтузиазм</span></div></div></div>
       </div>
       <section class="works" id="c1works"><div class="wrap"><div class="portfolio-intro"><span class="eyebrow">Портфолио / работы</span></div><div class="portfolio-list">
 <a class="portfolio-row" href="paradnaya.html"><span class="portfolio-number">01</span><h3>Парадная</h3><img src="assets/image-1.png" alt="Айдентика бара Парадная" loading="lazy"><span class="portfolio-category">Ребрендинг ↗</span></a>
