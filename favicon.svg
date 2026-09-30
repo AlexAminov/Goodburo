@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>GoodBuro</title>
+  <rect width="64" height="64" rx="16" fill="#3045c6"/>
+  <circle cx="21" cy="21" r="12" fill="#caff62"/>
+  <rect x="21" y="35" width="28" height="12" rx="2" fill="#ffffff"/>
+</svg>
